@@ -1,12 +1,12 @@
 dependencies: \
-  /Users/halak.vachhani/Desktop/Halak/ReactNative/mobileApp-master/node_modules/react-native/third-party/glog-0.3.4/src/vlog_is_on.cc \
-  /Users/halak.vachhani/Desktop/Halak/ReactNative/mobileApp-master/node_modules/react-native/React/../third-party/glog-0.3.4/src/utilities.h \
-  /Users/halak.vachhani/Desktop/Halak/ReactNative/mobileApp-master/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/mutex.h \
-  /Users/halak.vachhani/Desktop/Halak/ReactNative/mobileApp-master/node_modules/react-native/third-party/glog-0.3.4/src/config.h \
-  /Users/halak.vachhani/Desktop/Halak/ReactNative/mobileApp-master/node_modules/react-native/React/../third-party/glog-0.3.4/src/config.h \
-  /Users/halak.vachhani/Desktop/Halak/ReactNative/mobileApp-master/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/logging.h \
-  /Users/halak.vachhani/Desktop/Halak/ReactNative/mobileApp-master/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/log_severity.h \
-  /Users/halak.vachhani/Desktop/Halak/ReactNative/mobileApp-master/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/vlog_is_on.h \
-  /Users/halak.vachhani/Desktop/Halak/ReactNative/mobileApp-master/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/commandlineflags.h \
-  /Users/halak.vachhani/Desktop/Halak/ReactNative/mobileApp-master/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/raw_logging.h \
-  /Users/halak.vachhani/Desktop/Halak/ReactNative/mobileApp-master/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/googleinit.h
+  /Users/halak.vachhani/Desktop/Halak/GitProject/ReduxSaga/node_modules/react-native/third-party/glog-0.3.4/src/vlog_is_on.cc \
+  /Users/halak.vachhani/Desktop/Halak/GitProject/ReduxSaga/node_modules/react-native/React/../third-party/glog-0.3.4/src/utilities.h \
+  /Users/halak.vachhani/Desktop/Halak/GitProject/ReduxSaga/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/mutex.h \
+  /Users/halak.vachhani/Desktop/Halak/GitProject/ReduxSaga/node_modules/react-native/third-party/glog-0.3.4/src/config.h \
+  /Users/halak.vachhani/Desktop/Halak/GitProject/ReduxSaga/node_modules/react-native/React/../third-party/glog-0.3.4/src/config.h \
+  /Users/halak.vachhani/Desktop/Halak/GitProject/ReduxSaga/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/logging.h \
+  /Users/halak.vachhani/Desktop/Halak/GitProject/ReduxSaga/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/log_severity.h \
+  /Users/halak.vachhani/Desktop/Halak/GitProject/ReduxSaga/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/vlog_is_on.h \
+  /Users/halak.vachhani/Desktop/Halak/GitProject/ReduxSaga/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/commandlineflags.h \
+  /Users/halak.vachhani/Desktop/Halak/GitProject/ReduxSaga/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/raw_logging.h \
+  /Users/halak.vachhani/Desktop/Halak/GitProject/ReduxSaga/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/googleinit.h

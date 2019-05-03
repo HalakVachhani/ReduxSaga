@@ -5,7 +5,7 @@ import styles from './GridListRowStyle'
 
 const GridListRow = (details) => {
     return (
-        <View >
+        <View>
             <ImageBackground
                 style={styles.image}
                 loadingIndicatorSource={require('../Images/cocktail_black.png')}

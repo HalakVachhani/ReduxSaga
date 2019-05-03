@@ -5,7 +5,8 @@ import rootSaga from '../Sagas/'
 export default () => {
     /* ------------- Assemble The Reducers ------------- */
     const rootReducer = combineReducers({
-        cocktails: require('./CocktailReducer').reducer
+        cocktails: require('./HomeReducer').reducer,
+        post: require('./PostReducer').reducer
     })
 
     return configureStore(rootReducer, rootSaga)

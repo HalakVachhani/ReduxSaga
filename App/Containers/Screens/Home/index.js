@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { View, Text, Image, ListView, StatusBar } from 'react-native'
+import { View, Text, Image, ListView, StatusBar, TouchableOpacity, FlatList } from 'react-native'
 import { connect } from 'react-redux'
 import styles from './styles.js'
 import GridListRow from '../../../Components/GridListRow'
-import CocktailsActions from '../../../Redux/CocktailReducer'
+import CocktailsActions from '../../../Redux/HomeReducer'
 import AnimatedEllipsis from 'react-native-animated-ellipsis'
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
@@ -16,7 +16,8 @@ class Home extends Component {
             dataSource: ds.cloneWithRows([]),
             errorMsg: "",
             isLoading: false,
-            getData: false
+            getData: false,
+            data: []
         }
     }
 
@@ -44,7 +45,7 @@ class Home extends Component {
             this.setState({
                 isLoading: false,
                 errorMsg: "",
-                dataSource: ds.cloneWithRows(data),
+                data: data,
                 getData: true
             })
         }
@@ -59,14 +60,24 @@ class Home extends Component {
         )
     }
 
+    renderItem= ({ item }) => {
+        return (
+            <GridListRow {...item} />
+        )
+    }
+
 
     render() {
-        const { errorMsg, isLoading, getData } = this.state;
+        const { errorMsg, isLoading, getData, data } = this.state;
 
         return (
             <View style={styles.container}>
                 <View style={styles.statusbar}>
+                    <View style={styles.statusBarLeftTitle}></View>
                     <Text style={styles.statusBarTitle}>Home</Text>
+                    <TouchableOpacity style={{flex: 0.5}} onPress={() => this.props.navigation.navigate("Post")}>
+                        <Text style={styles.statusBarRightTitle}>Next</Text>
+                    </TouchableOpacity>
                 </View>
                 {
                     (isLoading && 
@@ -87,9 +98,11 @@ class Home extends Component {
                 }
                 {
                     (errorMsg == "" && !isLoading && getData &&
-                        <ListView contentContainerStyle={styles.gridCocktails}
-                            dataSource={this.state.dataSource}
-                            renderRow={(rowData) => this.renderRow(rowData)}
+                        <FlatList
+                            contentContainerStyle={styles.gridCocktails}
+                            data={data}
+                            keyExtractor={data => data.id.toString()}
+                            renderItem={this.renderItem}
                         />
                         )
                 }                                

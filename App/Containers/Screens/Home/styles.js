@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Dimensions } from 'react-native'
+
+const { width, height } = Dimensions.get("window")
 
 const styles = StyleSheet.create ({
     logo: {
@@ -30,14 +32,23 @@ const styles = StyleSheet.create ({
     },
     statusbar: {
         height: 64,
+        width: width,
         backgroundColor: "black",
-        justifyContent: 'center',
         alignItems:'center',
-        flexDirection:'row'
+        flexDirection:'row',
     },
-    statusBarTitle:{            
+    statusBarTitle:{           
         color: "white",
-        fontSize: 18
+        fontSize: 18,
+        textAlign: "center",
+        flex: 2,
+    },
+    statusBarRightTitle: { 
+        color: "white",
+        fontSize: 15,
+    },
+    statusBarLeftTitle: { 
+        flex: 0.5,
     }
 })
 
